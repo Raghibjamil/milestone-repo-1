@@ -1,0 +1,408 @@
+*,::after,::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* css of nav section start from here*/
+.nav-bar{
+    background-color: white;
+    height: 100px;
+    
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1.5rem;
+    
+    
+}
+
+.nav-content{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+.nav-content >img{
+    height: 40px;
+    width: 40px;
+}
+.nav-content>h2{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-link a{
+    text-decoration: none;
+    color: rgb(82, 77, 77);
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.nav-link a:hover{
+    color: orangered;
+}
+.nav-link{
+    display: flex;
+    /* align-items: center; */
+    column-gap: 2rem;
+}
+.nav-bar >button{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.menu-icon{
+    display: none;
+   
+}
+.user-profile{
+    display: none;
+    height: 50px;
+    width: 50px;
+    
+}
+.user-profile img{
+    height: 100%;
+    width: 100%;
+}
+/* css of nav section end  here*/
+
+/* css of main section start from here !!!*/
+.main-container{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 3rem 0px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70%,30%;
+    
+
+
+}
+.left-section{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: end;
+    
+    
+    
+}
+.left-section >h1{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.left-section >h3{
+    font-size: 20px;
+    padding: 1rem;
+    border-left: 1px solid black;
+    margin: 2rem 0px;
+}
+
+.img-section{
+     grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+    position: relative;
+    height: 75vh;
+}
+.img-section img{
+    position: absolute;
+}
+.orange-arrow{
+    top: 15%;
+    left:-10%;
+}
+.background{
+    top: 10%;
+    left: 15%;
+}
+.pattern{
+    top: 4%;
+    left: 15%;
+    z-index: 5;
+}
+.boy{
+    left: 30%;
+    top: 13%;
+    height: 425px;
+}
+.circle{
+    bottom: 5%;
+    right: 4%;
+}
+.green-arrow{
+    bottom: 0%;
+    left: 10%;
+}
+
+
+.button-container{
+      grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+   
+    position: relative;
+}
+
+ .button1{
+    padding: 1rem 2rem;
+    background-color: orangered;
+    color: white;
+    
+
+}
+.button2{
+    margin-left: 2rem;
+    padding: 1rem 2rem;
+    background-color: #fff;
+}
+.curve-arrow{
+    position: absolute;
+   right: 15%;
+   top: 15%;
+}
+
+
+/* css of main section  end here!!!*/
+
+/*css of footer section start from here!!!*/
+
+.footer-container{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0px;
+    background-color: #262543;
+    color: #fff;
+}
+
+.first-child{
+    width: 23%;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+.first-child > h1{
+
+    font-size: 40px;
+}
+.first-child > p{
+    font-size: 20px;
+    
+}
+.child{
+    width: 12%;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+.footer-image-container1{
+    height: 45px;
+    width: 45px;
+   
+    background-color: lightseagreen;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.footer-image-container2{
+    height: 45px;
+    width: 45px;
+    
+    background-color: rgb(238, 69, 8);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-image-container3{
+    height: 45px;
+    width: 45px;
+    
+    background-color: rgb(52, 52, 169);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*css of footer section end from here!!!*/
+
+@media screen and (max-width:576px) 
+{    
+    /*media query of nav section start from here!!!*/
+    .menu-icon{
+    display: block;
+        }
+    .user-profile{
+    display: block;
+    }
+.nav-link{
+    display: none;
+
+}
+
+.button{
+    display: none;
+}
+/*media query of nav section end here*/
+
+/* media query of main section*/
+.main-container{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.content{
+    display: grid;
+    /* display: block; */
+    
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,auto);
+    
+}
+.left-section{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: left;
+    align-items: start;
+    margin: 1rem;
+    
+    
+    
+}
+.left-section >h3{
+    margin-top: 1rem;
+}
+.img-section{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+    height: 80vh;
+
+}
+.orange-arrow{
+    top:5%;
+    left:10%;
+}
+.background{
+    top: 10%;
+    left: 10%;
+    height: 400px;
+}
+.pattern{
+    top: 6%;
+    left: 10%;
+    z-index: 5;
+    height: 400px;
+}
+.boy{
+    left: 25%;
+    top: 10%;
+    height: 390px;
+}
+.circle{
+    bottom: 15%;
+    right: 5%;
+}
+.green-arrow{
+    bottom: 5%;
+    left: 10%;
+}
+
+
+.button-container{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+    height: 35vh;
+    margin: 1rem;
+    
+    
+
+
+}
+ .button1{
+    padding: 1rem 2rem;
+    width:40% ;
+  
+    
+
+}
+.button2{
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+    width: 40%;
+    
+}
+.curve-arrow{
+    position: absolute;
+   right: 5%;
+   top: 25%;
+}
+
+/*media query of main section end here!!!*/
+/*media query of footer section start from here!!!!*/
+.footer-container{
+    flex-direction: column;
+    width: 100%;
+    
+    row-gap: 3rem;
+   
+
+}
+.first-child{
+    width: 100%;
+    
+    align-items: center;
+}
+.first-child>h1{
+    font-size: 30px;
+}
+.child{
+    width: 100%;
+    
+    align-items: center;
+    
+}
+
+/*media query of footer section end here!!!*/
+
+}
+
+
+
+
+
+
+
+
+
